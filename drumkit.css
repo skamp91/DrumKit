@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("./assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 50%;
+  min-width: 400px;
+  max-width: 700px;
+  background-color: rgba(252, 235, 182, 0.6);
+  border-radius: 10px;
+}
+
+.heading h1 {
+  margin: 0;
+  text-align: center;
+  font-family: "open sans", sans-serif;
+  font-size: 50px;
+  color: rgb(38, 42, 16);
+}
+
+.heading p {
+  margin: 0px;
+  text-align: center;
+  font-family: "open sans", sans-serif;
+  font-size: 25px;
+  color: rgb(38, 42, 16);
+}
+
+.drumkeys {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  border: 5px ridge rgba(114, 17, 33, 0.9);
+  border-radius: 15px;
+  background-color: rgba(114, 17, 33, 0.8);
+}
+
+.drumkey {
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "open sans", sans-serif;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border: 1px ridge rgba(38, 42, 16, 0.9);
+  background-color: rgba(38, 42, 16, 0.9);
+  color: #fcebb6;
+  box-shadow: 2px 2px 4px black;
+  transition: all 0.07s;
+}
+
+.playing {
+  transform: scale(1.05);
+  box-shadow: -2px -2px 4px black inset;
+  border: 1.5px ridge rgba(20, 30, 10, 0.9);
+  background-color: rgba(20, 30, 10, 0.9);
+}

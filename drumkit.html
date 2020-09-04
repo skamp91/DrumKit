@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>drumkit</title>
+  <link rel="stylesheet" type="text/css" href="./drumkit.css">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Let's Drum</h1>
+    <p>Use the Numpad to bounce</p>
+  </div>
+  <div class="drumkeys">
+    <div data-key="103" class="drumkey">
+      <kbd>7</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="104" class="drumkey">
+      <kbd>8</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="105" class="drumkey">
+      <kbd>9</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="100" class="drumkey">
+      <kbd>4</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="101" class="drumkey">
+      <kbd>5</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="102" class="drumkey">
+      <kbd>6</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="97" class="drumkey">
+      <kbd>1</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="98" class="drumkey">
+      <kbd>2</kbd>
+      <span class="sound">tink</span>
+    </div>
+    <div data-key="99" class="drumkey">
+      <kbd>3</kbd>
+      <span class="sound">tom</span>
+    </div>
+  </div>
+
+  <audio data-key="103" src="./sounds/boom.wav"></audio>
+  <audio data-key="104" src="./sounds/clap.wav"></audio>
+  <audio data-key="105" src="./sounds/hihat.wav"></audio>
+  <audio data-key="100" src="./sounds/kick.wav"></audio>
+  <audio data-key="101" src="./sounds/openhat.wav"></audio>
+  <audio data-key="102" src="./sounds/ride.wav"></audio>
+  <audio data-key="97" src="./sounds/snare.wav"></audio>
+  <audio data-key="98" src="./sounds/tink.wav"></audio>
+  <audio data-key="99" src="./sounds/tom.wav"></audio>
+  <div class="keyboard">
+    <div data-note="c3" class="key white"></div>
+    <div data-note="c-3" class="key black"></div>
+    <div data-note="d3" class="key white"></div>
+    <div data-note="d-3" class="key black"></div>
+    <div data-note="e3" class="key white"></div>
+    <div data-note="f3" class="key white"></div>
+    <div data-note="f-3" class="key black"></div>
+    <div data-note="g3" class="key white"></div>
+    <div data-note="g-3" class="key black"></div>
+    <div data-note="a4" class="key white"></div>
+    <div data-note="a-4" class="key black"></div>
+    <div data-note="b4" class="key white"></div>
+    <div data-note="c4" class="key white"></div>
+    <div data-note="c-4" class="key black"></div>
+    <div data-note="d4" class="key white"></div>
+    <div data-note="d-4" class="key black"></div>
+    <div data-note="e4" class="key white"></div>
+    <div data-note="f4" class="key white"></div>
+    <div data-note="f-4" class="key black"></div>
+    <div data-note="g4" class="key white"></div>
+    <div data-note="g-4" class="key black"></div>
+    <div data-note="a5" class="key white"></div>
+    <div data-note="a-5" class="key black"></div>
+    <div data-note="b5" class="key white"></div>
+  </div>
+  <audio src="./assets/notes/c3.mp3" id="c3"></audio>
+  <audio src="./assets/notes/c-3.mp3" id="c-3"></audio>
+  <audio src="./assets/notes/d3.mp3" id="d3"></audio>
+  <audio src="./assets/notes/d-3.mp3" id="d-3"></audio>
+  <audio src="./assets/notes/e3.mp3" id="e3"></audio>
+  <audio src="./assets/notes/f3.mp3" id="f3"></audio>
+  <audio src="./assets/notes/f-3.mp3" id="f-3"></audio>
+  <audio src="./assets/notes/g3.mp3" id="g3"></audio>
+  <audio src="./assets/notes/g-3.mp3" id="g-3"></audio>
+  <audio src="./assets/notes/a4.mp3" id="a4"></audio>
+  <audio src="./assets/notes/a-4.mp3" id="a-4"></audio>
+  <audio src="./assets/notes/b4.mp3" id="b4"></audio>
+  <audio src="./assets/notes/c4.mp3" id="c4"></audio>
+  <audio src="./assets/notes/c-4.mp3" id="c-4"></audio>
+  <audio src="./assets/notes/d4.mp3" id="d4"></audio>
+  <audio src="./assets/notes/d-4.mp3" id="d-4"></audio>
+  <audio src="./assets/notes/e4.mp3" id="e4"></audio>
+  <audio src="./assets/notes/f4.mp3" id="f4"></audio>
+  <audio src="./assets/notes/f-4.mp3" id="f-4"></audio>
+  <audio src="./assets/notes/g4.mp3" id="g4"></audio>
+  <audio src="./assets/notes/g-4.mp3" id="g-4"></audio>
+  <audio src="./assets/notes/a5.mp3" id="a5"></audio>
+  <audio src="./assets/notes/a-5.mp3" id="a-5"></audio>
+  <audio src="./assets/notes/b5.mp3" id="b5"></audio>
+
+  <script src="keyboard.js"></script>
+  <script src="./drumkit.js"></script>
+</body>
+
+</html>
